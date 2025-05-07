@@ -21,6 +21,14 @@ export async function getLastOrders({ accessToken }: { accessToken: string }): P
           },
         })
   )
+
+    },
+  }).then((res) => {
+    return res.orders?.map((order) => order);
+  });
+
+        })
+  )
     .then((res) => {
       return (
         res.orders?.map(
