@@ -8,5 +8,5 @@ export const wixAppClient = createClient({
     appSecret: process.env.WIX_APP_SECRET!,
     publicKey: process.env.WIX_APP_JWT_KEY,
   }),
- // modules: { shippingRates },
+  // modules: { shippingRates },
 });

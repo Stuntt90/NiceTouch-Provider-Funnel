@@ -10,7 +10,8 @@ body {
   overflow-x: hidden;
 }
 
-body {}
+body {
+}
 
 a {
   color: inherit;

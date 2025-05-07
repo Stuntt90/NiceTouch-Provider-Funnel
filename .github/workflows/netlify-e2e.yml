@@ -1,7 +1,7 @@
 name: Netlify E2E
 on:
   pull_request:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
     inputs:
       deploymentUrl:
@@ -13,7 +13,7 @@ on:
       shouldUpdateBaseline:
         description: 'Should the baseline be updated to reflect updates to the UI?'
         required: false
-        default: "false"
+        default: 'false'
 jobs:
   check_config:
     runs-on: ubuntu-latest

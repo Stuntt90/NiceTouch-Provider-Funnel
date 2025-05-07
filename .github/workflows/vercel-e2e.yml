@@ -15,7 +15,7 @@ on:
       shouldUpdateBaseline:
         description: 'Should the baseline be updated to reflect updates to the UI?'
         required: false
-        default: "false"
+        default: 'false'
 jobs:
   check_config:
     runs-on: ubuntu-latest
@@ -32,13 +32,13 @@ jobs:
           TARGET_URL: ${{ github.event.deployment_status.target_url }}
         run: |
           SITE_NAME=$(jq -r '.vercelSiteName // empty' ci.config.json)
-          
+
           if [[ -n "$DEPLOYMENT_URL" || (-n "$SITE_NAME" && "$DEPLOYMENT_STATUS" == "success" && "$TARGET_URL" == *"$SITE_NAME"*) ]]; then
             echo "proceed=true" >> $GITHUB_OUTPUT
           else
             echo "proceed=false" >> $GITHUB_OUTPUT
           fi
-          
+
           echo site_name="$SITE_NAME" >> $GITHUB_OUTPUT
           cat $GITHUB_OUTPUT
   vercel-e2e:

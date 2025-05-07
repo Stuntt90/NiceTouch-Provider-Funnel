@@ -20,7 +20,7 @@ outputs:
   conclusion:
     description: 'E2E result'
 runs:
-  using: "composite"
+  using: 'composite'
   steps:
     - name: Run E2E Tests on Netlify URL
       id: playwright-e2e

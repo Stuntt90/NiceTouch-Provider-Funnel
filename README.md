@@ -6,53 +6,46 @@ This [Next.js 14](https://nextjs.org/) template demos a simple shipping solution
 
 The template handles common app functionalities, laying the groundwork for further customization and development.
 
-
 ## About Wix app templates
 
 [Wix apps](https://dev.wix.com/docs/build-apps) enhance the functionality of Wix sites by adding new features such as custom pages, dashboard components, third-party integrations, or site analytics. Starting with an app template fast-tracks the development process, providing a working foundational app that developers can modify and build upon. This approach saves valuable time, allowing for a quick transition from concept to a fully functional app.
 
 Learn more about [Wix app templates](https://dev.wix.com/docs/build-apps/get-started/templates/get-started-from-an-app-template) and explore our growing [template collection](https://dev.wix.com/apps-templates).
 
-
 ## Template features
 
 This Wix app template incorporates the following features:
 
-+ **Self-hosting:** Develop and host an app on any platform, and integrate with Wix using the App Dashboard.
-+ **OAuth:** Secure authentication flow following Wix's guidelines.
-+ **Wix Design System:** Utilize Wix's reusable React components for a cohesive user experience consistent with Wix's design standards.
-+ **Wix Dashboard SDK:** Integrate custom dashboard components with the Wix site dashboard.
-+ **Shipping Rates SPI:** Integrate custom logic for calculating shipping rates.
-+ **Webhooks:** Handle app lifecycle events.
-
+- **Self-hosting:** Develop and host an app on any platform, and integrate with Wix using the App Dashboard.
+- **OAuth:** Secure authentication flow following Wix's guidelines.
+- **Wix Design System:** Utilize Wix's reusable React components for a cohesive user experience consistent with Wix's design standards.
+- **Wix Dashboard SDK:** Integrate custom dashboard components with the Wix site dashboard.
+- **Shipping Rates SPI:** Integrate custom logic for calculating shipping rates.
+- **Webhooks:** Handle app lifecycle events.
 
 ## Prerequisites
 
 Before getting started, make sure you have the following set up:
 
-+ [Node.js](https://nodejs.org/en/) (v18.16.0 or higher).
-+ A [Wix developer account](https://users.wix.com/signin?loginDialogContext=signup&referralInfo=HEADER&postLogin=https:%2F%2Fdev.wix.com%2Fdc3%2Fmy-apps&postSignUp=https:%2F%2Fdev.wix.com%2Fdc3%2Fmy-apps&forceRender=true).
-
+- [Node.js](https://nodejs.org/en/) (v18.16.0 or higher).
+- A [Wix developer account](https://users.wix.com/signin?loginDialogContext=signup&referralInfo=HEADER&postLogin=https:%2F%2Fdev.wix.com%2Fdc3%2Fmy-apps&postSignUp=https:%2F%2Fdev.wix.com%2Fdc3%2Fmy-apps&forceRender=true).
 
 ## Deploy to a free hosting service
 
 This template supports [quick deployment on Vercel or Netlify](https://dev.wix.com/apps-templates/template?id=0580022b-625e-4467-9f78-28cc3e618483) so you can get your app up and running in minutes. With quick deployment, you can:
 
-+ Clone the app template repo and deploy a live app server instantly.
-+ Generate a pre-configured app in the [App Dashboard](https://dev.wix.com/docs/build-apps/develop-your-app/app-dashboard-setup/about-the-app-dashboard). For configuration details, read about [what deployment gives you](#what-deployment-gives-you).
+- Clone the app template repo and deploy a live app server instantly.
+- Generate a pre-configured app in the [App Dashboard](https://dev.wix.com/docs/build-apps/develop-your-app/app-dashboard-setup/about-the-app-dashboard). For configuration details, read about [what deployment gives you](#what-deployment-gives-you).
 
 For instructions, go to the [app template page](https://dev.wix.com/apps-templates/template?id=0580022b-625e-4467-9f78-28cc3e618483).
-
 
 ## Deployment on a different platform
 
 To deploy the template on any other platform, follow these steps:
 
-
 ### Step 1 | Deploy the app's server code
 
 Follow your platform's instructions to clone the repo and deploy the app server, then find and copy the deployment domain. This is the base URL for your app's server.
-
 
 ### Step 2 | Generate a pre-configured App Dashboard app
 
@@ -70,14 +63,13 @@ To generate an app in the [App Dashboard](https://dev.wix.com/docs/build-apps/de
 
 This creates an app for you in the App Dashboard with the required URLs and permissions pre-configured.
 
-
 ### Step 3 | Configure environment variables
 
 Once your app is created, a screen appears with a code snippet containing environment variables you need to save in your app code:
 
-+ `WIX_APP_ID`: Your app's Wix App ID.
-+ `WIX_APP_SECRET`: Your app's secret key.
-+ `WIX_APP_JWT_KEY`: Your app's public key.
+- `WIX_APP_ID`: Your app's Wix App ID.
+- `WIX_APP_SECRET`: Your app's secret key.
+- `WIX_APP_JWT_KEY`: Your app's public key.
 
 Save these environment variables as follows:
 
@@ -85,12 +77,11 @@ Save these environment variables as follows:
 
 1. Create a file in your production root folder called `.env`, paste the code snippet into the file and save it.
 
-    **Note:** Always keep your `.env` secure and never commit it to version control. This file contains sensitive keys that should not be exposed publicly.
+   **Note:** Always keep your `.env` secure and never commit it to version control. This file contains sensitive keys that should not be exposed publicly.
 
 1. Redeploy the app.
 
 When deployment is finished, your app is ready to install.
-
 
 ### Step 4 | Test the app
 
@@ -110,21 +101,19 @@ Follow these steps to create a development site, install your app on the site, a
 
 Your app is now installed on your development site. To see the app's dashboard page, click **Apps** in the site dashboard's left sidebar, then click **Custom Shipping Rates**.
 
-
 ## What deployment gives you
 
 When you deploy this template, an app is automatically created for you in the [App Dashboard](https://dev.wix.com/apps/my-apps), pre-configured with settings required for the app to function properly within the Wix ecosystem. Find these pre-configured settings later in the app's dashboard as follows:
 
-+ **OAuth page:** App URL and Redirect URL for the [advanced OAuth flow](https://dev.wix.com/docs/build-apps/develop-your-app/access/authentication/use-advanced-oauth).
+- **OAuth page:** App URL and Redirect URL for the [advanced OAuth flow](https://dev.wix.com/docs/build-apps/develop-your-app/access/authentication/use-advanced-oauth).
 
-+ **Webhooks page:** App Removed and App Installed [webhooks](https://dev.wix.com/docs/build-apps/develop-your-app/api-integrations/events-and-webhooks/about-webhooks).
+- **Webhooks page:** App Removed and App Installed [webhooks](https://dev.wix.com/docs/build-apps/develop-your-app/api-integrations/events-and-webhooks/about-webhooks).
 
-+ **Extensions page:** Dashboard Page extension for the [dashboard page](https://dev.wix.com/docs/build-apps/develop-your-app/extensions/dashboard-extensions/dashboard-pages/about-dashboard-page-extensions) and eCom Shipping Rates extension for [integrating with the Shipping Rates SPI](https://dev.wix.com/docs/rest/api-reference/wix-e-commerce/shipping-rates-integration-spi/introduction).
+- **Extensions page:** Dashboard Page extension for the [dashboard page](https://dev.wix.com/docs/build-apps/develop-your-app/extensions/dashboard-extensions/dashboard-pages/about-dashboard-page-extensions) and eCom Shipping Rates extension for [integrating with the Shipping Rates SPI](https://dev.wix.com/docs/rest/api-reference/wix-e-commerce/shipping-rates-integration-spi/introduction).
 
-+ **Permissions page:** [Permission scopes](https://dev.wix.com/docs/build-apps/build-your-app/authentication/permissions) required for the APIs that the app calls.
+- **Permissions page:** [Permission scopes](https://dev.wix.com/docs/build-apps/build-your-app/authentication/permissions) required for the APIs that the app calls.
 
 When your server is deployed you can also preview the app's site dashboard page UI by navigating in the browser to `<YOUR_BASE_URL>/dashboard`.
-
 
 ## Local deployment
 
@@ -132,52 +121,50 @@ While developing your app, you may also wish to deploy and test it locally. You 
 
 1. Clone your version of the app repo locally:
 
-    ```shell
-    git clone <YOUR_REPO>
-    ```
+   ```shell
+   git clone <YOUR_REPO>
+   ```
 
 1. Make sure you are in the repo's root folder, then install dependencies:
 
-    ```shell
-    npm install
-    ```
+   ```shell
+   npm install
+   ```
 
 1. Create a file called `.env.local` in the repo's root folder. In that file, paste the required environment variables that you copied during quick deployment.
 
-    If you didn't copy these values during quick deployment, you can retrieve them in the [App Dashboard](https://dev.wix.com/apps), then paste them in the following format:
+   If you didn't copy these values during quick deployment, you can retrieve them in the [App Dashboard](https://dev.wix.com/apps), then paste them in the following format:
 
-    ```env
-    # App ID and App Secret Key: Retrieve from the OAuth page in the app's dashboard in the App Dashboard.
-    APP_ID=<APP_ID>
-    APP_SECRET=<APP_SECRET KEY>
+   ```env
+   # App ID and App Secret Key: Retrieve from the OAuth page in the app's dashboard in the App Dashboard.
+   APP_ID=<APP_ID>
+   APP_SECRET=<APP_SECRET KEY>
 
-    # App Public Key: Retrieve from the Webhooks page in the app's dashboard in the App Dashboard.
-    WEBHOOK_PUBLIC_KEY="<APP_WEBHOOK_PUBLIC_KEY>"
-    ```
+   # App Public Key: Retrieve from the Webhooks page in the app's dashboard in the App Dashboard.
+   WEBHOOK_PUBLIC_KEY="<APP_WEBHOOK_PUBLIC_KEY>"
+   ```
 
-    **Note:** Always keep your `.env.local` secure and never commit it to version control. This file contains sensitive keys that should not be exposed publicly.
+   **Note:** Always keep your `.env.local` secure and never commit it to version control. This file contains sensitive keys that should not be exposed publicly.
 
 1. For the URLs configured in the App Dashboard, replace the app's base URL with `https://localhost:3000/`:
 
-   + **OAuth page:** App URL and Redirect URL for the [advanced OAuth flow](https://dev.wix.com/docs/build-apps/develop-your-app/access/authentication/use-advanced-oauth).
+   - **OAuth page:** App URL and Redirect URL for the [advanced OAuth flow](https://dev.wix.com/docs/build-apps/develop-your-app/access/authentication/use-advanced-oauth).
 
-   + **Webhooks page:** App Removed and App Installed [webhooks](https://dev.wix.com/docs/build-apps/develop-your-app/api-integrations/events-and-webhooks/about-webhooks).
+   - **Webhooks page:** App Removed and App Installed [webhooks](https://dev.wix.com/docs/build-apps/develop-your-app/api-integrations/events-and-webhooks/about-webhooks).
 
 1. To start the development server, enter:
 
-    ```shell
-    npm run dev
-    ```
+   ```shell
+   npm run dev
+   ```
 
 You can now install the app on a Wix site with server code running locally.
 
 > **Note:** Remember to revert to the deployment URLs in the App Dashboard when you are ready to switch your app to production server deployment. You'll need to reinstall the app for the change to take effect.
 
-
 ## Extend and customize the app
 
 The template is designed for easy customization and extension. Here are some suggested entry points where you can add your own custom logic or functionality:
-
 
 ### Dashboard page customization
 
@@ -204,7 +191,6 @@ This template does not include database persistence. Instead, it's designed to b
 
 This file contains shell functions you can extend with functionality for saving and retrieving data using an external database.
 
-
 ### Shipping Rates SPI implementation
 
 The app leverages the [Wix eCommerce Shipping Rates SPI](https://dev.wix.com/docs/rest/api-reference/wix-e-commerce/shipping-rates-integration-spi/introduction) to incorporate a basic shipping rate customization functionality based on item weight or quantity. This implementation provides a flexible framework that you can extend to provide more tailored shipping options.
@@ -213,14 +199,14 @@ The app leverages the [Wix eCommerce Shipping Rates SPI](https://dev.wix.com/doc
 
 This endpoint is crucial for customizing the logic used to calculate shipping rates. The implementation can be extended or refined to accommodate different logistics models, alternative calculation criteria, or integration with third-party shipping APIs.
 
-
 ### Webhooks support
 
 The template implements support for two app lifecycle [webhooks](https://dev.wix.com/docs/build-apps/develop-your-app/api-integrations/events-and-webhooks/about-webhooks).
 
 **Development entry points:**
-+ [`src/app/api/webhooks/v1/install/route.ts`](./src/app/api/webhooks/v1/install/route.ts) receives a payload when the app is installed.
-+ [`src/app/api/webhooks/v1/uninstall/route.ts`](./src/app/api/webhooks/v1/uninstall/route.ts) receives a payload when the app is removed.
+
+- [`src/app/api/webhooks/v1/install/route.ts`](./src/app/api/webhooks/v1/install/route.ts) receives a payload when the app is installed.
+- [`src/app/api/webhooks/v1/uninstall/route.ts`](./src/app/api/webhooks/v1/uninstall/route.ts) receives a payload when the app is removed.
 
 In these files, you can extend the logic that is triggered when the app is installed or uninstalled. For example: add custom cleanup logic, notification systems, or integration with external services upon app installation or removal.
 
@@ -240,9 +226,9 @@ It contains GitHub Actions for PRs for both [Netlify](./.github/workflows/netlif
 You may remove the configuration not in use.
 
 > **Notes:**
-> + The end-to-end actions depend on the site name. Please update the site name in the [CI configuration file](./ci.config.json) for the relevant platform.
-> + Some deployment platforms don't copy workflows to the cloned repo. If the `.github/workflows` directory is empty, copy the necessary file from the [template repo](https://github.com/wix/app-template-custom-shipping-rates) to your repo.
-
+>
+> - The end-to-end actions depend on the site name. Please update the site name in the [CI configuration file](./ci.config.json) for the relevant platform.
+> - Some deployment platforms don't copy workflows to the cloned repo. If the `.github/workflows` directory is empty, copy the necessary file from the [template repo](https://github.com/wix/app-template-custom-shipping-rates) to your repo.
 
 #### Screenshot testing
 
@@ -255,6 +241,6 @@ To update the screenshots, trigger the workflow manually, and set the `shouldUpd
 
 For more information:
 
-+ Learn more about [Wix app templates](https://dev.wix.com/docs/build-apps/get-started/templates/get-started-from-an-app-template).
-+ Check out our [full collection of app templates](https://dev.wix.com/apps-templates).
-+ See our documentation for details about [building Wix apps](https://dev.wix.com/docs/build-apps).
+- Learn more about [Wix app templates](https://dev.wix.com/docs/build-apps/get-started/templates/get-started-from-an-app-template).
+- Check out our [full collection of app templates](https://dev.wix.com/apps-templates).
+- See our documentation for details about [building Wix apps](https://dev.wix.com/docs/build-apps).
