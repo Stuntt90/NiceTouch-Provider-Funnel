@@ -13,7 +13,7 @@ export async function getLastOrders({ accessToken }: { accessToken: string }): P
   return (
     isTestingToken(accessToken)
       ? (await import('@/app/utils/mocks-server')).getTestOrders()
-      : sdk.orders.searchOrders({
+  //    : sdk.orders.searchOrders({
           search: {
             cursorPaging: {
               limit: 3,
