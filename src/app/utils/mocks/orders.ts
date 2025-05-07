@@ -1,19 +1,18 @@
+// src/app/utils/mocks/orders.ts
 export const orders = {
-  async searchOrders() {
+  searchOrders: async () => {
     return {
       orders: [
         {
-          id: 'mock-1',
-          createdDate: new Date().toISOString(),
-          total: 49.99,
+          number: '123',
+          _createdDate: new Date().toISOString(),
+          priceSummary: {
+            total: { amount: 50 },
+          },
+          currency: 'USD',
         },
-        {
-          id: 'mock-2',
-          createdDate: new Date().toISOString(),
-          total: 79.99,
-        }
-      ]
+      ],
     };
-  }
+  },
 };
 
